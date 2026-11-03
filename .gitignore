@@ -1,0 +1,10 @@
+dist/
+node_modules/
+android/
+ios/
+resources/
+.DS_Store
+*.keystore
+*.jks
+RetroKend.apk
+harness/

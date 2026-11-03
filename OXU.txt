@@ -1,0 +1,12 @@
+RETRO KƏND — TELEFONA SALMAQ
+
+Lazımdır (bir dəfə): Node.js 22+ (nodejs.org, LTS) və Android Studio (açılıb ilk quraşdırma bitməlidir).
+
+1. Bu qovluqda apk.bat faylına iki dəfə klikləyin.
+2. Gözləyin (ilk dəfə 5-15 dəqiqə). Sonda "HAZIRDIR!" yazılır.
+3. Bu qovluqda RetroKend.apk faylı yaranır.
+4. Faylı telefona göndərin (Telegram / WhatsApp / kabel), açın, "Quraşdır".
+   - "Naməlum mənbə" soruşsa: icazə verin.
+   - Play Protect xəbərdarlıq etsə: "Daha ətraflı" -> "Yenə də quraşdır".
+
+Oyunu dəyişsəniz: yenə apk.bat-a iki dəfə klikləyin.

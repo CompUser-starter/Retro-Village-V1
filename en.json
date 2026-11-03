@@ -1,0 +1,460 @@
+{
+  "game": {
+    "title": "Retro Village",
+    "subtitle": "A cozy offline pixel village",
+    "version": "Version {count}"
+  },
+  "main_menu": {
+    "play": "Play",
+    "continue": "Continue",
+    "quests": "Quests",
+    "settings": "Settings",
+    "about": "About",
+    "offline_note": "100% offline · no ads · no login",
+    "welcome_title": "Welcome, traveler!",
+    "welcome_text": "Pick a language and tell us your name.",
+    "name_label": "Your name",
+    "name_placeholder": "Traveler",
+    "start": "Start adventure",
+    "default_name": "Traveler"
+  },
+  "settings": {
+    "title": "Settings",
+    "language": "Language",
+    "music": "Music",
+    "sound": "Sound effects",
+    "volume": "Volume",
+    "reset": "Reset game",
+    "reset_confirm": "All progress will be erased. Are you sure?",
+    "reset_done": "Game was reset.",
+    "about": "About",
+    "about_text": "Retro Village works fully offline. No ads, no login, no servers, no analytics. Your data stays on this device only. All code, visuals and sounds are original.",
+    "on": "On",
+    "off": "Off",
+    "name": "Player name",
+    "controls": "Controls",
+    "control_fixed": "Fixed stick",
+    "control_free": "Free stick",
+    "control_dpad": "Buttons",
+    "controls_hint": "This changes how you walk around the village map."
+  },
+  "common": {
+    "back": "Back",
+    "close": "Close",
+    "ok": "OK",
+    "yes": "Yes",
+    "no": "No",
+    "cancel": "Cancel",
+    "coins": "Coins",
+    "score": "Score",
+    "best": "Best",
+    "time": "Time",
+    "lives": "Lives",
+    "play": "Play",
+    "start": "Start",
+    "pause": "Pause",
+    "resume": "Resume",
+    "retry": "Play again",
+    "next": "Next",
+    "claim": "Claim",
+    "claimed": "Claimed",
+    "locked": "Locked",
+    "unlock": "Unlock",
+    "buy": "Buy",
+    "sell": "Sell",
+    "owned": "Owned",
+    "new_record": "New record!",
+    "level": "Level",
+    "round": "Round",
+    "total": "Total",
+    "reward": "Reward",
+    "collect": "Collect",
+    "talk": "Talk",
+    "enter": "Enter",
+    "empty": "Empty",
+    "max": "Max",
+    "free": "Free",
+    "sec": "s",
+    "exit": "Exit",
+    "wear": "Wear",
+    "wearing": "Worn",
+    "exit_confirm": "Leave the game?",
+    "exit_text": "Your score in this run will not be saved.",
+    "loading": "Loading…"
+  },
+  "map": {
+    "enter": "Enter",
+    "talk": "Talk",
+    "locked": "Locked",
+    "coming_soon": "Coming soon",
+    "next_goal": "Next goal",
+    "unlock_title": "Unlock {name}?",
+    "unlock_text": "Open this place for {coins} coins.",
+    "unlocked": "{name} unlocked!",
+    "pond_closed": "The pond is closed for now.",
+    "hint": "Drag the stick to walk. Tap A at doors and villagers.",
+    "goals": {
+      "plant": "Plant your first seed at the farm",
+      "harvest": "Wait for it to grow, then harvest it",
+      "blocks": "Visit the school and play Crystal Garden",
+      "maze": "Try Energy Maze at the arcade",
+      "festival": "Join your first festival in the square",
+      "cafe": "Save {coins} coins to open the café",
+      "pond": "Save {coins} coins to open the pond",
+      "cave": "Save {coins} coins to open the cave",
+      "quests": "Finish and claim your daily quests"
+    }
+  },
+  "buildings": {
+    "home": {
+      "name": "Your House",
+      "desc": "Decorate your room, change your outfit and check records."
+    },
+    "farm": {
+      "name": "Garden Farm",
+      "desc": "Plant seeds, harvest crops and care for animals."
+    },
+    "square": {
+      "name": "Village Square",
+      "desc": "Join the Festival: three mini games, one big score."
+    },
+    "arcade": {
+      "name": "Arcade Cabin",
+      "desc": "Maze, eel pond, space, tower, road and sparrow."
+    },
+    "school": {
+      "name": "Village School",
+      "desc": "A crystal puzzle, a music lesson and a friendly teacher."
+    },
+    "cafe": {
+      "name": "Village Café",
+      "desc": "Serve drinks before guests lose patience."
+    },
+    "shop": {
+      "name": "General Store",
+      "desc": "Seeds, decorations, outfits and village upgrades."
+    },
+    "cave": {
+      "name": "Cave Entrance",
+      "desc": "A treasure run and a shaft climb."
+    },
+    "pond": {
+      "name": "Pond",
+      "desc": "Calm fishing from a wooden pier."
+    }
+  },
+  "mini_games": {
+    "maze": {
+      "name": "Energy Maze",
+      "pitch": "Collect energy shards and dodge patrol bots.",
+      "how": "Swipe or drag to turn. Grab every shard to clear the maze."
+    },
+    "blocks": {
+      "name": "Crystal Garden",
+      "pitch": "Fit garden crystals on the grid and clear lines.",
+      "how": "Drag a piece onto the grid. Full rows and columns vanish."
+    },
+    "shooter": {
+      "name": "Orbit Sweeper",
+      "pitch": "Blast space junk with your little ship.",
+      "how": "Drag to fly. Your ship fires by itself."
+    },
+    "cave": {
+      "name": "Cave Gem Run",
+      "pitch": "Dash through the cave and grab the treasure.",
+      "how": "Tap to jump. Tap again in the air for a double jump."
+    },
+    "cafe": {
+      "name": "Café Rush",
+      "pitch": "Mix the right ingredients before guests leave.",
+      "how": "Tap a guest, then tap ingredients in the order shown."
+    },
+    "snake": {
+      "name": "Snake Garden",
+      "pitch": "Gather fruit in the garden without touching your tail.",
+      "how": "Swipe to turn. Avoid the walls, the rocks and your own body."
+    },
+    "climb": {
+      "name": "Crystal Climb",
+      "pitch": "Bounce your way up the cave shaft.",
+      "how": "Drag left and right to steer. Avoid spiky platforms and watch out for crumbling ones."
+    },
+    "rhythm": {
+      "name": "Music Lesson",
+      "pitch": "Tap when a crystal lands on its button.",
+      "how": "Tap the lane or press A/S/D as the crystal reaches the colored button. Speed rises over time!"
+    },
+    "fish": {
+      "name": "Calm Fishing",
+      "pitch": "Pull the rod at the right moment.",
+      "how": "Tap when a fish bites, then stop the needle inside the green zone. Three good pulls and it is yours."
+    },
+    "castle": {
+      "name": "Castle Builder",
+      "pitch": "Stack the blocks and raise your castle tower.",
+      "how": "The block swings — tap to drop it. Any overhang is sliced off; a perfect drop earns a bonus."
+    },
+    "apples": {
+      "name": "Apple Rain",
+      "pitch": "Move the basket and catch the ripe apples.",
+      "how": "Drag the basket. Apples are +10, golden apples +50. Rocks and worms cost you a life!"
+    },
+    "common": {
+      "ready": "Ready?",
+      "go": "Go!",
+      "game_over": "Game over",
+      "time_up": "Time's up!",
+      "paused": "Paused",
+      "plays": "Played: {count}",
+      "last": "Last: {score}",
+      "level_clear": "Level {count} clear!",
+      "combo": "Combo x{count}",
+      "stuck": "No more moves!",
+      "session": "About {count} seconds per run",
+      "tap_to_start": "Tap Start when you are ready",
+      "length_label": "Run length",
+      "length_short": "Short",
+      "length_medium": "Medium",
+      "length_long": "Long",
+      "length_endless": "Endless"
+    },
+    "car": {
+      "name": "Country Road",
+      "pitch": "Drive the car and dodge the traffic.",
+      "how": "Swipe to change lane. Avoid cars, grab the fuel cans."
+    },
+    "bird": {
+      "name": "Sparrow Flight",
+      "pitch": "Guide a little sparrow through the gaps between logs.",
+      "how": "Tap to flap. Don't hit the logs or the ground — every gap you pass scores.",
+      "tap": "Tap to fly"
+    }
+  },
+  "quests": {
+    "title": "Quests",
+    "daily": "Daily quests",
+    "weekly": "Weekly quests",
+    "resets_daily": "New quests in {time}",
+    "resets_weekly": "New weekly quests in {time}",
+    "ready": "Ready to claim!",
+    "completed": "Quest complete!",
+    "reward_claimed": "Reward claimed: {coins} coins",
+    "pool": {
+      "play_game": "Play {game} {count} times",
+      "score_game": "Score {score}+ in {game}",
+      "play_any": "Play {count} mini games",
+      "plant": "Plant {count} seeds",
+      "harvest": "Harvest {count} crops",
+      "purchase": "Buy {count} items",
+      "sell": "Sell {count} items",
+      "collect": "Collect {count} animal goods",
+      "festival_score": "Earn {score} festival points",
+      "festival_run": "Finish {count} festivals"
+    }
+  },
+  "festival": {
+    "title": "Village Festival",
+    "desc": "Play three random mini games in a row and add up your score.",
+    "best": "Best: {score}",
+    "last": "Last run: {score}",
+    "runs": "Festivals played: {count}",
+    "start": "Start festival",
+    "round_of": "Round {round} of {total}",
+    "up_next": "Up next",
+    "total_score": "Total score",
+    "round_done": "Round complete!",
+    "round_score": "Round score: {score}",
+    "continue": "Next round",
+    "final_title": "Festival complete!",
+    "final_score": "Final score",
+    "rank": "Rank",
+    "ranks": {
+      "bronze": "Bronze",
+      "silver": "Silver",
+      "gold": "Gold",
+      "star": "Star"
+    },
+    "reward": "Reward: {coins} coins",
+    "new_best": "New festival record!",
+    "need_games": "Unlock at least 3 mini games to join the festival.",
+    "abandon": "Leave festival?",
+    "abandon_text": "Your progress in this run will be lost.",
+    "again": "Play again",
+    "rules": "Scores from each round are summed. Rewards are paid at the end.",
+    "pool": "Games in the pool",
+    "length_label": "Length of each round",
+    "progress": "Round {round}/{total}",
+    "played_here": "This festival: {count} games"
+  },
+  "farming": {
+    "title": "Garden Farm",
+    "hint": "Pick a seed, tap an empty plot to plant, tap a growing plant to water it, tap a ready crop to harvest.",
+    "seeds_bar": "Seeds",
+    "ready": "Ready!",
+    "growing": "Growing · {time}",
+    "watered": "Watered",
+    "empty": "Empty",
+    "no_seed": "You have no {name} seeds. Visit the shop!",
+    "planted": "Planted {name}",
+    "harvested": "Harvested: {name} ×{count}",
+    "water_done": "Watered! Grows faster.",
+    "animals": "Animals",
+    "no_animals": "No animals yet. Buy one in the shop!",
+    "collect": "Collect",
+    "next_in": "Next in {time}",
+    "stored": "Ready: {count}",
+    "collected": "Collected: {name} ×{count}",
+    "plots": "Plots: {count}",
+    "pick_seed": "Pick a seed first."
+  },
+  "shop": {
+    "title": "General Store",
+    "tab_seeds": "Seeds",
+    "tab_decor": "Decor",
+    "tab_skins": "Outfits",
+    "tab_village": "Village",
+    "tab_sell": "Sell",
+    "bought": "Purchased: {name}",
+    "not_enough": "Not enough coins.",
+    "sold": "Sold for {coins} coins!",
+    "nothing_sell": "Nothing to sell yet. Harvest some crops first!",
+    "sell_all": "Sell all",
+    "extra_plot": "Extra farm plot",
+    "extra_plot_desc": "More space to grow crops.",
+    "owned_count": "Owned: {count}",
+    "max_reached": "Maximum reached",
+    "unlock_building": "Open {name}",
+    "seed_desc": "Grows in {time}. Sells for {coins}.",
+    "animal_desc": "Makes {name} every {time}.",
+    "decor_desc": "A cozy touch for your room.",
+    "skin_desc": "A new look for your character. Bought outfits can also be worn at home.",
+    "skins_boy": "Boy",
+    "skins_girl": "Girl",
+    "skins_unisex": "Unisex"
+  },
+  "items": {
+    "seed_pack": "{name} seeds",
+    "crops": {
+      "wheat": "Wheat",
+      "carrot": "Carrot",
+      "pumpkin": "Pumpkin"
+    },
+    "goods": {
+      "egg": "Egg",
+      "wool": "Wool"
+    },
+    "animals": {
+      "chicken": "Chicken",
+      "sheep": "Sheep"
+    },
+    "decor": {
+      "plant": "Potted plant",
+      "clock": "Wall clock",
+      "picture": "Pixel picture",
+      "flower": "Flower vase",
+      "lamp": "Cozy lamp",
+      "shelf": "Bookshelf",
+      "rug": "Round rug",
+      "tv": "Pixel TV",
+      "guitar": "Guitar",
+      "bird": "Bird cage",
+      "cat": "Sleepy cat",
+      "dog": "Puppy"
+    },
+    "skins": {
+      "player": "Traveler",
+      "hero": "Hero",
+      "ranger": "Ranger",
+      "astro": "Astronaut",
+      "gardener": "Gardener Girl",
+      "student": "Student Girl",
+      "star": "Star Girl"
+    },
+    "ingredients": {
+      "cup": "Cup",
+      "coffee": "Coffee",
+      "milk": "Milk",
+      "sugar": "Sugar",
+      "cake": "Cake",
+      "tea": "Tea"
+    }
+  },
+  "inventory": {
+    "title": "Your House",
+    "tab_room": "Room",
+    "tab_bag": "Bag",
+    "tab_outfit": "Outfits",
+    "tab_records": "Records",
+    "choose": "Choose a decoration",
+    "remove": "Remove",
+    "empty_slot": "Empty spot",
+    "bag_empty": "Your bag is empty.",
+    "seeds": "Seeds",
+    "crops": "Crops",
+    "goods": "Goods",
+    "records_title": "Personal bests",
+    "festival_best": "Festival best",
+    "total_plays": "Games played",
+    "no_decor": "Buy decorations at the store to place them here.",
+    "wearing": "Currently worn",
+    "buy_skins_hint": "You can buy new looks in the Outfits section of the store.",
+    "name": "Name"
+  },
+  "results": {
+    "title": "Results",
+    "score": "Score",
+    "best": "Personal best",
+    "new_record": "New personal record!",
+    "coins": "Coins earned: {coins}",
+    "reason_time": "Time's up",
+    "reason_dead": "Out of lives",
+    "reason_stuck": "No more moves",
+    "festival_note": "Festival rewards are paid at the end of the run."
+  },
+  "errors": {
+    "not_enough_coins": "Not enough coins.",
+    "locked": "This place is locked.",
+    "save_reset": "Save data was damaged, so a fresh save was created.",
+    "generic": "Something went wrong."
+  },
+  "tutorial": {
+    "title": "Quick tips",
+    "move": "Drag the stick on the left to walk around.",
+    "act": "Tap the A button near doors and villagers.",
+    "quests": "Check your quests every day for coins and seeds."
+  },
+  "dialogue": {
+    "names": {
+      "elder": "Elder Nuri",
+      "teacher": "Teacher Leyla",
+      "cafe_owner": "Aysel",
+      "shepherd": "Shepherd Tural",
+      "shopkeeper": "Murad"
+    },
+    "elder": {
+      "l1": "Welcome to our little village! Plant a seed at the farm and the day will grow with it.",
+      "l2": "The old stone square comes alive during the festival. Bring your best scores!",
+      "l3": "Quests renew every day. A patient villager always has a full pocket."
+    },
+    "teacher": {
+      "l1": "Crystals fit best when you plan two moves ahead. Try it in my class!",
+      "l2": "A tidy grid is a tidy mind. Clear a full row and feel the difference.",
+      "l3": "Practice makes a new record. Come back and beat your best!"
+    },
+    "cafe_owner": {
+      "l1": "Cup first, then the rest. Guests hate waiting, so be quick!",
+      "l2": "My coffee is simple: cup, coffee, a little milk. Easy, right?",
+      "l3": "Wrong ingredient? No worries, just start the order again."
+    },
+    "shepherd": {
+      "l1": "My sheep love sunny days. Buy one and you will get fresh wool.",
+      "l2": "Chickens lay eggs while you are away. Come back later and collect!",
+      "l3": "Watering a plant makes it grow faster. A little care goes a long way."
+    },
+    "shopkeeper": {
+      "l1": "Seeds, lamps, rugs... if I do not have it, you probably do not need it!",
+      "l2": "You can sell your crops and eggs to me. Fair prices, I promise.",
+      "l3": "A new farm plot means more crops. Think about it!"
+    }
+  }
+}

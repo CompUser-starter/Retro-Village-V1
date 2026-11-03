@@ -1,0 +1,500 @@
+@import "tailwindcss";
+
+/* ------------------------------------------------------------------
+   Retro Kənd – bright daytime village theme
+   Palette taken from the reference art: blue sky, white clouds,
+   fresh green grass, terracotta roofs, cream walls, sandy roads, wood.
+   ------------------------------------------------------------------ */
+:root {
+  --ink: #4a2d1c; /* dark wood outline (replaces night-navy) */
+  --wood: #7d5632;
+  --wood-light: #a8784a;
+  --cream: #fff4dc;
+  --cream-dark: #ecd7ad;
+  --sand: #e4c07a;
+  --sand-dark: #c49a55;
+  --sky: #5fb8e0;
+  --sky-deep: #3a9bd3;
+  --grass: #6abe30;
+  --grass-dark: #3e8948;
+  --roof: #d9603b;
+  --roof-dark: #a53d26;
+  --teal: #3fb8a8;
+  --teal-dark: #207a7a;
+  --orange: #ef8f3a;
+  --orange-dark: #c96a1e;
+  --red: #d9453b;
+  --red-dark: #8f2d3b;
+  --green: #6abe30;
+  --green-dark: #3e8948;
+  --blue: #4a90d9;
+  --yellow: #fbd54a;
+  --purple: #b86fc6;
+
+  /* app background pieces */
+  --bg-top: #7fd0ee;
+  --bg-mid: #a9e3f5;
+  --bg-grass: #7cc94e;
+}
+
+html {
+  font-size: 18px;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  overscroll-behavior: none;
+  background: #5fb8e0;
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+body {
+  font-family: "VT323", "Pixelify Sans", ui-monospace, "Courier New", monospace;
+  font-size: 22px;
+  line-height: 1.05;
+  color: var(--ink);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+input {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
+.pixelated {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+canvas {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  touch-action: none;
+  display: block;
+}
+
+/* ---------- Day-village page background ----------
+   Sky gradient + pixel clouds + grass strip at the bottom.
+   Used by every non-game screen via .village-bg                           */
+.village-bg {
+  background-color: var(--bg-mid);
+  background-image:
+    /* grass + darker hedge at the bottom */
+    linear-gradient(to top, #4f9a3a 0, #4f9a3a 10px, var(--bg-grass) 10px, var(--bg-grass) 34px, transparent 34px),
+    /* soft hills */
+    radial-gradient(ellipse 70% 40px at 20% calc(100% - 34px), #8ed45e 0 60%, transparent 61%),
+    radial-gradient(ellipse 80% 48px at 78% calc(100% - 34px), #8ed45e 0 60%, transparent 61%),
+    /* pixel clouds */
+    radial-gradient(ellipse 34px 14px at 18% 14%, #ffffff 0 60%, transparent 61%),
+    radial-gradient(ellipse 22px 12px at 26% 11%, #ffffff 0 60%, transparent 61%),
+    radial-gradient(ellipse 40px 16px at 72% 24%, #ffffff 0 60%, transparent 61%),
+    radial-gradient(ellipse 24px 12px at 80% 21%, #ffffff 0 60%, transparent 61%),
+    radial-gradient(ellipse 30px 12px at 50% 40%, rgba(255, 255, 255, 0.85) 0 60%, transparent 61%),
+    /* sky */
+    linear-gradient(to bottom, var(--bg-top) 0, var(--bg-mid) 55%, #d8f2fb 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+/* ---------- Pixel UI kit ----------
+   Shared pack rules: 4px walnut outline, 2px inner rim, 4px drop,
+   teal corner ornaments on cream panels. Same numbers everywhere.   */
+.px-panel {
+  position: relative;
+  background: var(--cream);
+  border: 4px solid var(--ink);
+  box-shadow: 0 0 0 2px var(--cream-dark) inset, 4px 4px 0 rgba(74, 45, 28, 0.35);
+  color: var(--ink);
+}
+/* teal corner ornaments like the pack's title/text boxes */
+.px-panel::before,
+.px-panel::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
+  background:
+    linear-gradient(var(--teal), var(--teal)) 0 0 / 10px 3px no-repeat,
+    linear-gradient(var(--teal), var(--teal)) 0 0 / 3px 10px no-repeat;
+}
+.px-panel::before {
+  left: 2px;
+  top: 2px;
+}
+.px-panel::after {
+  right: 2px;
+  bottom: 2px;
+  transform: rotate(180deg);
+}
+
+/* "dark" panels become a wooden sign board */
+.px-panel-dark {
+  background: var(--wood);
+  background-image: repeating-linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 0 2px, transparent 2px 9px);
+  border: 4px solid var(--ink);
+  box-shadow: 0 0 0 2px var(--wood-light) inset, 4px 4px 0 rgba(74, 45, 28, 0.35);
+  color: var(--cream);
+}
+
+/* parchment variant for description / dialogue boxes */
+.px-panel-paper {
+  background: #f3dfb8;
+  background-image: repeating-linear-gradient(to bottom, rgba(74, 45, 28, 0.04) 0 1px, transparent 1px 6px);
+  border: 4px solid var(--ink);
+  box-shadow: 0 0 0 2px #d9bf8c inset, 4px 4px 0 rgba(74, 45, 28, 0.35);
+  color: var(--ink);
+}
+
+/* muted / disabled panel */
+.px-panel-muted {
+  background: #cfc7b8;
+  border: 4px solid var(--ink);
+  box-shadow: 0 0 0 2px #b4ab9a inset, 4px 4px 0 rgba(74, 45, 28, 0.25);
+  color: #6f6a6f;
+}
+
+/* title plaque (short label bar): walnut double frame + teal corners */
+.px-plaque {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 3px 16px 5px;
+  background: var(--cream);
+  border: 4px solid var(--ink);
+  box-shadow: 0 0 0 2px var(--cream-dark) inset, 0 0 0 4px var(--ink), 4px 4px 0 rgba(74, 45, 28, 0.35);
+  color: var(--ink);
+}
+.px-plaque > .font-teal,
+.px-plaque > .font-amber,
+.px-plaque > .font-cream {
+  font-size: 1.15em;
+}
+
+/* wide text box with teal corner ornaments (dialogue / description) */
+.px-textbox {
+  position: relative;
+  background: var(--cream);
+  border: 4px solid var(--ink);
+  box-shadow: 0 0 0 2px var(--cream-dark) inset, 4px 4px 0 rgba(74, 45, 28, 0.35);
+  color: var(--ink);
+  padding: 10px 12px;
+}
+.px-textbox::before,
+.px-textbox::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  pointer-events: none;
+  background:
+    linear-gradient(var(--teal), var(--teal)) 0 0 / 10px 3px no-repeat,
+    linear-gradient(var(--teal), var(--teal)) 0 0 / 3px 10px no-repeat;
+}
+.px-textbox::before {
+  left: 2px;
+  top: 2px;
+}
+.px-textbox::after {
+  right: 2px;
+  bottom: 2px;
+  transform: rotate(180deg);
+}
+
+/* score box: cream face, walnut double frame, label strip on top */
+.px-scorebox {
+  position: relative;
+  background: var(--cream);
+  border: 4px solid var(--ink);
+  box-shadow: 0 0 0 2px var(--cream-dark) inset, 4px 4px 0 rgba(74, 45, 28, 0.35);
+  padding: 6px 10px 8px;
+  color: var(--ink);
+}
+.px-scorebox > .lbl {
+  display: block;
+  margin: -16px 0 2px 4px;
+  padding: 0 8px;
+  background: var(--cream);
+  width: fit-content;
+  color: var(--teal);
+}
+
+/* ribbon-topped panel (Game Over / Pause style) */
+.px-framed {
+  position: relative;
+  background: var(--wood);
+  background-image: repeating-linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 0 2px, transparent 2px 9px);
+  border: 4px solid var(--ink);
+  box-shadow: 0 0 0 2px var(--wood-light) inset, 4px 4px 0 rgba(74, 45, 28, 0.35);
+  padding: 10px;
+  color: var(--cream);
+}
+.px-framed > .px-textbox,
+.px-framed > .px-panel {
+  box-shadow: none;
+}
+
+.px-btn {
+  --c: var(--teal);
+  --cd: var(--teal-dark);
+  --tc: var(--cream);
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 14px 10px;
+  background: var(--c);
+  border: 4px solid var(--ink);
+  box-shadow: 0 -4px 0 rgba(255, 255, 255, 0.28) inset, 0 -6px 0 var(--cd) inset, 0 4px 0 var(--ink);
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  color: #fff;
+  text-shadow: 2px 2px 0 var(--ink);
+  cursor: pointer;
+  transition: transform 60ms;
+  min-height: 48px;
+}
+.px-btn.amber {
+  --c: var(--yellow);
+  --cd: #c9820f;
+  --tc: var(--cream);
+}
+.px-btn:active:not(:disabled) {
+  transform: translateY(4px);
+  box-shadow: 0 -4px 0 rgba(255, 255, 255, 0.25) inset, 0 -6px 0 var(--cd) inset, 0 0 0 var(--ink);
+}
+.px-btn:disabled {
+  filter: grayscale(0.9) brightness(0.85);
+  cursor: not-allowed;
+}
+.px-btn.orange {
+  --c: var(--orange);
+  --cd: var(--orange-dark);
+}
+.px-btn.red {
+  --c: var(--red);
+  --cd: var(--red-dark);
+}
+.px-btn.gray {
+  --c: #a8784a;
+  --cd: #7d5632;
+}
+.px-btn.green {
+  --c: var(--green);
+  --cd: var(--green-dark);
+}
+.px-btn.purple {
+  --c: var(--purple);
+  --cd: #6b3f8f;
+}
+.px-btn.sm {
+  font-size: 20px;
+  padding: 4px 10px 8px;
+  min-height: 38px;
+}
+
+.px-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(74, 45, 28, 0.88);
+  color: #fff;
+  border: 3px solid var(--ink);
+  padding: 2px 8px;
+  box-shadow: 0 0 0 2px var(--wood-light) inset;
+}
+
+/* progress bar: walnut track, cream groove, amber fill – same rim as panels */
+.px-bar {
+  height: 14px;
+  background: var(--cream-dark);
+  border: 3px solid var(--ink);
+  box-shadow: 0 0 0 2px var(--wood-light);
+  padding: 1px;
+}
+.px-bar > div {
+  height: 100%;
+  background: var(--yellow);
+  box-shadow: 0 -3px 0 rgba(255, 255, 255, 0.35) inset, 0 2px 0 rgba(74, 45, 28, 0.25) inset;
+  transition: width 120ms steps(4);
+}
+
+/* segmented bar (lives / steps) */
+.px-segments {
+  display: inline-flex;
+  gap: 3px;
+  padding: 3px;
+  background: var(--ink);
+  border: 3px solid var(--ink);
+  box-shadow: 0 0 0 2px var(--wood-light);
+}
+.px-segments > i {
+  width: 14px;
+  height: 14px;
+  background: var(--cream-dark);
+}
+.px-segments > i.on {
+  background: var(--yellow);
+  box-shadow: 0 -3px 0 rgba(255, 255, 255, 0.35) inset;
+}
+
+/* ring gauge: walnut ring with amber sweep (set --pct 0..100) */
+.px-ring {
+  --pct: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle, var(--cream) 0 55%, transparent 56%),
+    conic-gradient(var(--yellow) calc(var(--pct) * 1%), var(--cream-dark) 0);
+  box-shadow: 0 0 0 4px var(--ink), 0 0 0 6px var(--wood-light);
+}
+
+/* ribbon banner (for results / ranks) */
+.px-ribbon {
+  display: inline-block;
+  padding: 2px 18px 4px;
+  background: var(--red);
+  color: #fff;
+  border: 4px solid var(--ink);
+  box-shadow: 0 -4px 0 rgba(255, 255, 255, 0.2) inset, 0 -6px 0 var(--red-dark) inset;
+  text-shadow: 2px 2px 0 var(--ink);
+}
+.px-ribbon.sand {
+  background: var(--sand);
+  color: var(--ink);
+  text-shadow: none;
+  box-shadow: 0 -4px 0 rgba(255, 255, 255, 0.35) inset, 0 -6px 0 var(--sand-dark) inset;
+}
+
+.px-title {
+  text-shadow: 3px 3px 0 var(--ink), -1px -1px 0 var(--ink), 1px -1px 0 var(--ink), -1px 1px 0 var(--ink);
+}
+
+/* ---------- Typography (original VT323 look) ---------- */
+.font-regular {
+  color: var(--ink);
+}
+.font-bold-amber,
+.font-amber {
+  color: var(--yellow);
+  text-shadow: 2px 2px 0 var(--ink), -1px -1px 0 var(--ink), 1px -1px 0 var(--ink), -1px 1px 0 var(--ink);
+}
+.font-display,
+.font-teal {
+  color: var(--teal);
+  text-shadow: 3px 3px 0 var(--ink), -1px -1px 0 var(--ink), 1px -1px 0 var(--ink), -1px 1px 0 var(--ink);
+}
+.font-cream {
+  color: var(--cream);
+  text-shadow: 2px 2px 0 var(--ink), -1px -1px 0 var(--ink), 1px -1px 0 var(--ink), -1px 1px 0 var(--ink);
+}
+
+/* wooden header bar used by ScreenHeader + tab strips */
+.px-wood {
+  background: var(--wood);
+  background-image: repeating-linear-gradient(to bottom, rgba(255, 255, 255, 0.06) 0 2px, transparent 2px 9px);
+  border-bottom: 4px solid var(--ink);
+  box-shadow: 0 2px 0 var(--wood-light) inset;
+}
+
+.tab-on {
+  background: var(--cream);
+  color: var(--ink);
+}
+.tab-off {
+  background: var(--wood-light);
+  color: #fff4dc;
+}
+
+@keyframes px-pop {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  70% {
+    transform: scale(1.08);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.px-pop {
+  animation: px-pop 220ms steps(4) both;
+}
+
+@keyframes px-float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+.px-float {
+  animation: px-float 1.6s steps(4) infinite;
+}
+
+@keyframes px-blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0.25;
+  }
+}
+.px-blink {
+  animation: px-blink 1s steps(1) infinite;
+}
+
+@keyframes px-slide {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.px-slide {
+  animation: px-slide 200ms steps(4) both;
+}
+
+@keyframes cloud-drift {
+  from {
+    background-position-x: 0, 0, 0, 0, 0, 0, 0, 0, 0;
+  }
+  to {
+    background-position-x: 0, 0, 0, 40px, 40px, -40px, -40px, 30px, 0;
+  }
+}
+
+.scanlines::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 2px, rgba(0, 0, 0, 0.04) 3px);
+}
+
+/* scrollbars */
+.px-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--wood) transparent;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+}

@@ -1,0 +1,460 @@
+{
+  "game": {
+    "title": "Retro Village",
+    "subtitle": "Rahat oflayn piksel kənd",
+    "version": "Versiya {count}"
+  },
+  "main_menu": {
+    "play": "Oyna",
+    "continue": "Davam et",
+    "quests": "Tapşırıqlar",
+    "settings": "Ayarlar",
+    "about": "Haqqında",
+    "offline_note": "100% oflayn · reklamsız · girişsiz",
+    "welcome_title": "Xoş gəldin, səyyah!",
+    "welcome_text": "Dili seç və adını yaz.",
+    "name_label": "Adın",
+    "name_placeholder": "Səyyah",
+    "start": "Macəraya başla",
+    "default_name": "Səyyah"
+  },
+  "settings": {
+    "title": "Ayarlar",
+    "language": "Dil",
+    "music": "Musiqi",
+    "sound": "Səs effektləri",
+    "volume": "Səs səviyyəsi",
+    "reset": "Oyunu sıfırla",
+    "reset_confirm": "Bütün irəliləyişin silinəcək. Əminsən?",
+    "reset_done": "Oyun sıfırlandı.",
+    "about": "Haqqında",
+    "about_text": "Retro Kənd tam oflayn işləyir. Reklam, giriş, server və analitika yoxdur. Məlumatların yalnız bu cihazda qalır. Bütün kod, vizual və səslər orijinaldır.",
+    "on": "Açıq",
+    "off": "Bağlı",
+    "name": "Oyunçu adı",
+    "controls": "İdarəetmə",
+    "control_fixed": "Sabit çubuq",
+    "control_free": "Sərbəst çubuq",
+    "control_dpad": "Düymələr",
+    "controls_hint": "Bu seçim kənd xəritəsindəki gəzintiyə təsir edir."
+  },
+  "common": {
+    "back": "Geri",
+    "close": "Bağla",
+    "ok": "Oldu",
+    "yes": "Bəli",
+    "no": "Xeyr",
+    "cancel": "Ləğv et",
+    "coins": "Sikkə",
+    "score": "Xal",
+    "best": "Rekord",
+    "time": "Vaxt",
+    "lives": "Can",
+    "play": "Oyna",
+    "start": "Başla",
+    "pause": "Pauza",
+    "resume": "Davam et",
+    "retry": "Yenidən oyna",
+    "next": "Növbəti",
+    "claim": "Götür",
+    "claimed": "Alındı",
+    "locked": "Bağlı",
+    "unlock": "Aç",
+    "buy": "Al",
+    "sell": "Sat",
+    "owned": "Var",
+    "new_record": "Yeni rekord!",
+    "level": "Səviyyə",
+    "round": "Raund",
+    "total": "Cəmi",
+    "reward": "Mükafat",
+    "collect": "Topla",
+    "talk": "Danış",
+    "enter": "Daxil ol",
+    "empty": "Boş",
+    "max": "Maks",
+    "free": "Pulsuz",
+    "sec": "san",
+    "exit": "Çıx",
+    "wear": "Geyin",
+    "wearing": "Geyinilib",
+    "exit_confirm": "Oyundan çıxılsın?",
+    "exit_text": "Bu oyundakı xalın yazılmayacaq.",
+    "loading": "Yüklənir…"
+  },
+  "map": {
+    "enter": "Daxil ol",
+    "talk": "Danış",
+    "locked": "Bağlı",
+    "coming_soon": "Tezliklə",
+    "next_goal": "Növbəti məqsəd",
+    "unlock_title": "{name} açılsın?",
+    "unlock_text": "Bu məkanı {coins} sikkəyə aç.",
+    "unlocked": "{name} açıldı!",
+    "pond_closed": "Gölməçə hələlik bağlıdır. Balıqçılıq gələcək yeniləmədə gəlir!",
+    "hint": "Gəzmək üçün çubuğu sürüşdür. Qapılarda və kənd sakinlərinin yanında A düyməsinə toxun.",
+    "goals": {
+      "plant": "Bağçada ilk toxumunu əkin",
+      "harvest": "Bitkinin böyüməsini gözlə və məhsulu yığ",
+      "blocks": "Məktəbə get və Kristal Bağını oyna",
+      "maze": "Arcade evində Enerji Labirintini sına",
+      "festival": "Meydanda ilk festivalına qoşul",
+      "cafe": "Kafeni açmaq üçün {coins} sikkə yığ",
+      "pond": "Gölməçəni açmaq üçün {coins} sikkə yığ",
+      "cave": "Mağaranı açmaq üçün {coins} sikkə yığ",
+      "quests": "Gündəlik tapşırıqları bitir və mükafatı götür"
+    }
+  },
+  "buildings": {
+    "home": {
+      "name": "Evin",
+      "desc": "Otağını bəzə, geyimini dəyiş və rekordlarına bax."
+    },
+    "farm": {
+      "name": "Bağça-təsərrüfat",
+      "desc": "Toxum ək, məhsul yığ və heyvanlara bax."
+    },
+    "square": {
+      "name": "Kənd meydanı",
+      "desc": "Festivala qoşul: üç mini-oyun, bir böyük xal."
+    },
+    "arcade": {
+      "name": "Arcade evi",
+      "desc": "Labirint, ilanbalığı, kosmos, qala, yol və sərçə."
+    },
+    "school": {
+      "name": "Kənd məktəbi",
+      "desc": "Kristal bulmaca, ritim dərsi və mehriban müəllim."
+    },
+    "cafe": {
+      "name": "Kənd kafesi",
+      "desc": "Qonaqların səbri tükənməmiş içkiləri hazırla."
+    },
+    "shop": {
+      "name": "Ümumi mağaza",
+      "desc": "Toxum, bəzək, geyim və kənd yenilikləri."
+    },
+    "cave": {
+      "name": "Mağara girişi",
+      "desc": "Mədəndə qaçış və şaftaya qalxış."
+    },
+    "pond": {
+      "name": "Gölməçə",
+      "desc": "Taxta körpüdə sakit balıqçılıq."
+    }
+  },
+  "mini_games": {
+    "maze": {
+      "name": "Enerji Labirinti",
+      "pitch": "Enerji qırıntılarını topla, patrul robotlardan qaç.",
+      "how": "Dönmək üçün sürüşdür. Labirinti keçmək üçün bütün qırıntıları götür."
+    },
+    "blocks": {
+      "name": "Kristal Bağı",
+      "pitch": "Bağ kristallarını şəbəkəyə yerləşdir və sətirləri təmizlə.",
+      "how": "Parçanı şəbəkəyə sürüşdür. Dolu sətir və sütunlar yox olur."
+    },
+    "shooter": {
+      "name": "Orbit Süpürgəsi",
+      "pitch": "Kiçik gəmi ilə kosmik tullantıları dağıt.",
+      "how": "Uçmaq üçün sürüşdür. Gəmi özü atəş açır."
+    },
+    "cave": {
+      "name": "Mağara Qaçışı",
+      "pitch": "Mağarada qaç və xəzinəni topla.",
+      "how": "Tullanmaq üçün toxun. Havada yenə toxun, ikiqat tullanış olsun."
+    },
+    "cafe": {
+      "name": "Kafe Tələsiyi",
+      "pitch": "Qonaqlar getməmiş düzgün tərkibləri qarışdır.",
+      "how": "Qonağa toxun, sonra tərkibləri göstərilən ardıcıllıqla seç."
+    },
+    "snake": {
+      "name": "Yılan Bağı",
+      "pitch": "Bağda meyvə yığ, divara və öz quyruğuna toxunma.",
+      "how": "Dönmək üçün sürüşdür. Divardan, daşlardan və öz bədənindən qaç."
+    },
+    "climb": {
+      "name": "Kristal Qalxışı",
+      "pitch": "Mağara şaxtasında yuxarı doğru sıçra.",
+      "how": "Sağa-sola aparmaq üçün barmağını sürüşdür. Tikanlı platformalardan qaç, qırılanları diqqətlə seç."
+    },
+    "rhythm": {
+      "name": "Ritim Dərsi",
+      "pitch": "Not kristalı düymənin üstünə çatanda bas.",
+      "how": "Kristal rəngli düymənin üstünə gələndə zolağa toxun və ya A/S/D bas. Sürət getdikcə artır!"
+    },
+    "fish": {
+      "name": "Sakit Balıqçılıq",
+      "pitch": "Balıq dişləyəndə oltanı vaxtında çək.",
+      "how": "Balıq dişləyəndə toxun, sonra iynəni yaşıl zonada saxla. Üç uğurlu çekişdən sonra balıq senindir."
+    },
+    "castle": {
+      "name": "Qala Quraşdırıcı",
+      "pitch": "Blokları üst-üstə yığıb qalanı ucalt.",
+      "how": "Blok yellənir — düşürmək üçün ekrana toxun. Kənara çıxan hissə kəsilir, dəqiq düşürsən bonus alırsan."
+    },
+    "apples": {
+      "name": "Alma Yağışı",
+      "pitch": "Səbətini hərəkət etdir, yetişmiş almaları tut.",
+      "how": "Səbəti sürüşdür. Alma tut (+10), qızıl alma (+50). Daş və qurd səni vurur — can itirmə!"
+    },
+    "common": {
+      "ready": "Hazırsan?",
+      "go": "Başla!",
+      "game_over": "Oyun bitdi",
+      "time_up": "Vaxt bitdi!",
+      "paused": "Pauza",
+      "plays": "Oynanıb: {count}",
+      "last": "Son: {score}",
+      "level_clear": "{count}-ci səviyyə keçildi!",
+      "combo": "Kombo x{count}",
+      "stuck": "Gediş qalmadı!",
+      "session": "Bir oyun təxminən {count} saniyə",
+      "tap_to_start": "Hazır olanda Başla düyməsinə bas",
+      "length_label": "Oyun müddəti",
+      "length_short": "Qısa",
+      "length_medium": "Orta",
+      "length_long": "Uzun",
+      "length_endless": "Vaxtsız"
+    },
+    "car": {
+      "name": "Kənd Yolu",
+      "pitch": "Maşını sür, digər maşınlardan yayın.",
+      "how": "Sürüşdürərək zolaq dəyiş. Maşınlara dəymə, yanacaq qutularını topla."
+    },
+    "bird": {
+      "name": "Sərçə Uçuşu",
+      "pitch": "Kiçik sərçəni kötüklərin arasından uçur.",
+      "how": "Qanad çalmaq üçün ekrana toxun. Kötüklərə və yerə dəymə — hər keçid xal verir.",
+      "tap": "Uçmaq üçün toxun"
+    }
+  },
+  "quests": {
+    "title": "Tapşırıqlar",
+    "daily": "Gündəlik tapşırıqlar",
+    "weekly": "Həftəlik tapşırıqlar",
+    "resets_daily": "Yeni tapşırıqlara: {time}",
+    "resets_weekly": "Yeni həftəlik tapşırıqlara: {time}",
+    "ready": "Mükafatı götürə bilərsən!",
+    "completed": "Tapşırıq tamamlandı!",
+    "reward_claimed": "Mükafat alındı: {coins} sikkə",
+    "pool": {
+      "play_game": "{game} oyununu {count} dəfə oyna",
+      "score_game": "{game} oyununda {score}+ xal topla",
+      "play_any": "{count} mini-oyun oyna",
+      "plant": "{count} toxum ək",
+      "harvest": "{count} məhsul yığ",
+      "purchase": "{count} əşya al",
+      "sell": "{count} əşya sat",
+      "collect": "Heyvanlardan {count} məhsul topla",
+      "festival_score": "Festivalda {score} xal qazan",
+      "festival_run": "{count} festivalı bitir"
+    }
+  },
+  "festival": {
+    "title": "Kənd festivalı",
+    "desc": "Ardıcıl üç təsadüfi mini-oyun oyna və xallarını topla.",
+    "best": "Rekord: {score}",
+    "last": "Son nəticə: {score}",
+    "runs": "Oynanan festival: {count}",
+    "start": "Festivalı başlat",
+    "round_of": "Raund {round} / {total}",
+    "up_next": "Növbəti oyun",
+    "total_score": "Ümumi xal",
+    "round_done": "Raund bitdi!",
+    "round_score": "Raund xalı: {score}",
+    "continue": "Növbəti raund",
+    "final_title": "Festival bitdi!",
+    "final_score": "Yekun xal",
+    "rank": "Dərəcə",
+    "ranks": {
+      "bronze": "Bürünc",
+      "silver": "Gümüş",
+      "gold": "Qızıl",
+      "star": "Ulduz"
+    },
+    "reward": "Mükafat: {coins} sikkə",
+    "new_best": "Yeni festival rekordu!",
+    "need_games": "Festivala qoşulmaq üçün ən azı 3 mini-oyun açılmalıdır.",
+    "abandon": "Festivaldan çıxılsın?",
+    "abandon_text": "Bu oyundakı irəliləyişin itəcək.",
+    "again": "Yenidən oyna",
+    "rules": "Hər raundun xalı toplanır. Mükafat sonda verilir.",
+    "pool": "Oyun siyahısı",
+    "length_label": "Hər raundun müddəti",
+    "progress": "Raund {round}/{total}",
+    "played_here": "Bu festivalda: {count} oyun"
+  },
+  "farming": {
+    "title": "Bağça-təsərrüfat",
+    "hint": "Toxum seç, boş yerə toxun və ək. Böyüyən bitkiyə toxunub suvar, hazır məhsula toxunub yığ.",
+    "seeds_bar": "Toxumlar",
+    "ready": "Hazırdır!",
+    "growing": "Böyüyür · {time}",
+    "watered": "Suvarılıb",
+    "empty": "Boş",
+    "no_seed": "{name} toxumun yoxdur. Mağazaya get!",
+    "planted": "Əkildi: {name}",
+    "harvested": "Yığıldı: {name} ×{count}",
+    "water_done": "Suvarıldı! Daha tez böyüyəcək.",
+    "animals": "Heyvanlar",
+    "no_animals": "Hələ heyvanın yoxdur. Mağazadan al!",
+    "collect": "Topla",
+    "next_in": "Növbəti: {time}",
+    "stored": "Hazırdır: {count}",
+    "collected": "Toplandı: {name} ×{count}",
+    "plots": "Sahələr: {count}",
+    "pick_seed": "Əvvəlcə toxum seç."
+  },
+  "shop": {
+    "title": "Ümumi mağaza",
+    "tab_seeds": "Toxum",
+    "tab_decor": "Bəzək",
+    "tab_skins": "Geyim",
+    "tab_village": "Kənd",
+    "tab_sell": "Sat",
+    "bought": "Alındı: {name}",
+    "not_enough": "Sikkə çatmır.",
+    "sold": "{coins} sikkəyə satıldı!",
+    "nothing_sell": "Hələ satacaq şey yoxdur. Əvvəlcə məhsul yığ!",
+    "sell_all": "Hamısını sat",
+    "extra_plot": "Əlavə əkin sahəsi",
+    "extra_plot_desc": "Məhsul becərmək üçün daha çox yer.",
+    "owned_count": "Var: {count}",
+    "max_reached": "Maksimuma çatıb",
+    "unlock_building": "{name} aç",
+    "seed_desc": "{time} ərzində böyüyür. Satış qiyməti: {coins}.",
+    "animal_desc": "Hər {time} bir {name} verir.",
+    "decor_desc": "Otağın üçün isti bir toxunuş.",
+    "skin_desc": "Oyunçu üçün yeni görünüş. Alınan geyim evdə də geyinilir.",
+    "skins_boy": "Oğlan",
+    "skins_girl": "Qız",
+    "skins_unisex": "Uniseks"
+  },
+  "items": {
+    "seed_pack": "{name} toxumu",
+    "crops": {
+      "wheat": "Buğda",
+      "carrot": "Yerkökü",
+      "pumpkin": "Balqabaq"
+    },
+    "goods": {
+      "egg": "Yumurta",
+      "wool": "Yun"
+    },
+    "animals": {
+      "chicken": "Toyuq",
+      "sheep": "Qoyun"
+    },
+    "decor": {
+      "plant": "Gül qabı",
+      "clock": "Divar saatı",
+      "picture": "Piksel şəkil",
+      "flower": "Gül vazası",
+      "lamp": "İsti lampa",
+      "shelf": "Kitab rəfi",
+      "rug": "Yumru xalça",
+      "tv": "Piksel televizor",
+      "guitar": "Gitara",
+      "bird": "Quş qəfəsi",
+      "cat": "Yuxulu pişik",
+      "dog": "Küçük it"
+    },
+    "skins": {
+      "player": "Səyyah",
+      "hero": "Qəhrəman",
+      "ranger": "Meşəçi",
+      "astro": "Kosmonavt",
+      "gardener": "Bağban qız",
+      "student": "Şagird qız",
+      "star": "Ulduz qız"
+    },
+    "ingredients": {
+      "cup": "Fincan",
+      "coffee": "Qəhvə",
+      "milk": "Süd",
+      "sugar": "Şəkər",
+      "cake": "Tort",
+      "tea": "Çay"
+    }
+  },
+  "inventory": {
+    "title": "Evin",
+    "tab_room": "Otaq",
+    "tab_bag": "Çanta",
+    "tab_outfit": "Geyim",
+    "tab_records": "Rekordlar",
+    "choose": "Bəzək seç",
+    "remove": "Götür",
+    "empty_slot": "Boş yer",
+    "bag_empty": "Çantan boşdur.",
+    "seeds": "Toxumlar",
+    "crops": "Məhsullar",
+    "goods": "Mallar",
+    "records_title": "Şəxsi rekordlar",
+    "festival_best": "Festival rekordu",
+    "total_plays": "Oynanan oyun",
+    "no_decor": "Bəzəkləri mağazadan alıb buraya yerləşdir.",
+    "wearing": "Bu görünüş geyinilib",
+    "buy_skins_hint": "Yeni görünüşləri mağazadakı Geyim bölməsindən ala bilərsən.",
+    "name": "Ad"
+  },
+  "results": {
+    "title": "Nəticələr",
+    "score": "Xal",
+    "best": "Şəxsi rekord",
+    "new_record": "Yeni şəxsi rekord!",
+    "coins": "Qazanılan sikkə: {coins}",
+    "reason_time": "Vaxt bitdi",
+    "reason_dead": "Canlar bitdi",
+    "reason_stuck": "Gediş qalmadı",
+    "festival_note": "Festival mükafatı oyunun sonunda verilir."
+  },
+  "errors": {
+    "not_enough_coins": "Sikkə çatmır.",
+    "locked": "Bu məkan bağlıdır.",
+    "save_reset": "Yadda saxlanmış məlumat zədələnmişdi, ona görə yeni save yaradıldı.",
+    "generic": "Nəsə səhv getdi."
+  },
+  "tutorial": {
+    "title": "Qısa məsləhətlər",
+    "move": "Gəzmək üçün solda çubuğu sürüşdür.",
+    "act": "Qapıların və kənd sakinlərinin yanında A düyməsinə toxun.",
+    "quests": "Sikkə və toxum qazanmaq üçün hər gün tapşırıqlara bax."
+  },
+  "dialogue": {
+    "names": {
+      "elder": "Nuri baba",
+      "teacher": "Leyla müəllimə",
+      "cafe_owner": "Aysel",
+      "shepherd": "Çoban Tural",
+      "shopkeeper": "Murad"
+    },
+    "elder": {
+      "l1": "Kiçik kəndimizə xoş gəldin! Bağçada bir toxum ək, gün də onunla bərabər böyüyər.",
+      "l2": "Köhnə meydan festival vaxtı canlanır. Ən yaxşı xallarını gətir!",
+      "l3": "Tapşırıqlar hər gün yenilənir. Səbirli insanın cibi həmişə dolu olar."
+    },
+    "teacher": {
+      "l1": "Kristallar iki gediş qabağı düşünəndə ən yaxşı yerləşir. Dərsimdə sına!",
+      "l2": "Səliqəli şəbəkə səliqəli ağıl deməkdir. Bir sətri təmizlə və fərqi hiss et.",
+      "l3": "Məşq yeni rekord gətirir. Qayıdıb öz rekordunu qır!"
+    },
+    "cafe_owner": {
+      "l1": "Əvvəl fincan, sonra qalanı. Qonaqlar gözləməyi sevmir, tez ol!",
+      "l2": "Mənim qəhvəm sadədir: fincan, qəhvə, bir az süd. Asandır, hə?",
+      "l3": "Tərkib səhv oldu? Narahat olma, sifarişi yenidən başla."
+    },
+    "shepherd": {
+      "l1": "Qoyunlarım günəşli günləri sevir. Birini al, təzə yun alarsan.",
+      "l2": "Sən yoxkən toyuqlar yumurta qoyur. Sonra qayıdıb topla!",
+      "l3": "Suvarılan bitki daha tez böyüyür. Azca qayğı çox şey verir."
+    },
+    "shopkeeper": {
+      "l1": "Toxum, lampa, xalça... məndə yoxdursa, yəqin sənə lazım deyil!",
+      "l2": "Məhsulunu və yumurtanı mənə sata bilərsən. Qiymətlər ədalətlidir.",
+      "l3": "Yeni əkin sahəsi daha çox məhsul deməkdir. Bir fikirləş!"
+    }
+  }
+}
